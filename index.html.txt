@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern Dress Shop</title>
+<style>
+  body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    margin:0; padding:0; 
+    background: linear-gradient(120deg, #ffe4e1, #fff0f5);
+  }
+
+  header { 
+    text-align:center; padding:30px; 
+    background: #ffe0e6; 
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    border-bottom: 2px solid #ffccd5;
+  }
+  header h1 { margin:0; color:#4b3e3e; }
+  header p { color:#666; margin-top:5px; }
+
+  h2 { text-align:center; margin:30px 0 15px; color:#4b3e3e; }
+
+  .gallery { display:flex; flex-wrap:wrap; justify-content:center; gap:20px; padding:20px; }
+
+  .card {
+    background:#fff8f0; 
+    width:220px; 
+    border-radius:12px; 
+    overflow:hidden; 
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor:pointer; 
+    position:relative;
+  }
+  .card:hover { transform: scale(1.05); box-shadow:0 12px 24px rgba(0,0,0,0.2); }
+  .card img { width:100%; height:280px; object-fit:cover; display:block; }
+  .card-info { padding:12px; text-align:center; }
+  .card-info h3 { margin:8px 0 4px; color:#4b3e3e; font-size:18px; }
+  .card-info p { color:green; font-weight:bold; margin:4px 0; }
+
+  .whatsapp-btn { 
+    display:inline-block; margin-top:8px; padding:8px 12px; 
+    background:#25D366; color:white; text-decoration:none; 
+    border-radius:6px; transition:0.3s; font-size:14px;
+  }
+  .whatsapp-btn:hover { background:#128C7E; transform: scale(1.05); }
+
+  .contact { background:#fff3f0; padding:30px; margin:20px; text-align:center; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.15);}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>👗 Modern Dress Shop</h1>
+  <p>Trendy Dresses for Boys & Girls – WhatsApp Orders Only</p>
+</header>
+
+<h2>Our Collection</h2>
+<div class="gallery">
+
+  <!-- Girls Dresses -->
+  <div class="card">
+    <img src="https://via.placeholder.com/220x280.png?text=Girls+Dress+1" alt="Girls Dress 1">
+    <div class="card-info">
+      <h3>Red Party Dress</h3>
+      <p>₹1499</p>
+      <a class="whatsapp-btn" href="#" onclick="whatsappOrder('Red Party Dress','₹1499')">Order via WhatsApp</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/220x280.png?text=Girls+Dress+2" alt="Girls Dress 2">
+    <div class="card-info">
+      <h3>Blue Long Dress</h3>
+      <p>₹1799</p>
+      <a class="whatsapp-btn" href="#" onclick="whatsappOrder('Blue Long Dress','₹1799')">Order via WhatsApp</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/220x280.png?text=Girls+Dress+3" alt="Girls Dress 3">
+    <div class="card-info">
+      <h3>Pink Frock</h3>
+      <p>₹1299</p>
+      <a class="whatsapp-btn" href="#" onclick="whatsappOrder('Pink Frock','₹1299')">Order via WhatsApp</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/220x280.png?text=Girls+Dress+4" alt="Girls Dress 4">
+    <div class="card-info">
+      <h3>Yellow Dress</h3>
+      <p>₹1399</p>
+      <a class="whatsapp-btn" href="#" onclick="whatsappOrder('Yellow Dress','₹1399')">Order via WhatsApp</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/220x280.png?text=Girls+Dress+5" alt="Girls Dress 5">
+    <div class="card-info">
+      <h3>Green Dress</h3>
+      <p>₹1599</p>
+      <a class="whatsapp-btn" href="#" onclick="whatsappOrder('Green Dress','₹1599')">Order via WhatsApp</a>
+    </div>
+  </div>
+
+  <!-- Boys Dresses -->
+  <div class="card">
+    <img src="https://via.placeholder.com/220x280.png?text=Boys+Dress+1" alt="Boys Dress 1">
+    <div class="card-info">
+      <h3>Blue Shirt</h3>
+      <p>₹899</p>
+      <a class="whatsapp-btn" href="#" onclick="whatsappOrder('Blue Shirt','₹899')">Order via WhatsApp</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/220x280.png?text=Boys+Dress+2" alt="Boys Dress 2">
+    <div class="card-info">
+      <h3>Red T-Shirt</h3>
+      <p>₹699</p>
+      <a class="whatsapp-btn" href="#" onclick="whatsappOrder('Red T-Shirt','₹699')">Order via WhatsApp</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/220x280.png?text=Boys+Dress+3" alt="Boys Dress 3">
+    <div class="card-info">
+      <h3>Green Polo Shirt</h3>
+      <p>₹999</p>
+      <a class="whatsapp-btn" href="#" onclick="whatsappOrder('Green Polo Shirt','₹999')">Order via WhatsApp</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/220x280.png?text=Boys+Dress+4" alt="Boys Dress 4">
+    <div class="card-info">
+      <h3>Black Hoodie</h3>
+      <p>₹1299</p>
+      <a class="whatsapp-btn" href="#" onclick="whatsappOrder('Black Hoodie','₹1299')">Order via WhatsApp</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/220x280.png?text=Boys+Dress+5" alt="Boys Dress 5">
+    <div class="card-info">
+      <h3>Grey Sweatshirt</h3>
+      <p>₹1199</p>
+      <a class="whatsapp-btn" href="#" onclick="whatsappOrder('Grey Sweatshirt','₹1199')">Order via WhatsApp</a>
+    </div>
+  </div>
+
+</div>
+
+<div class="contact">
+  <h2>Contact Us</h2>
+  <p>📍 123 Fashion Street, Delhi, India</p>
+  <p>📞 +91 88888 88888</p>
+  <p>✉️ shop@example.com</p>
+</div>
+
+<script>
+function whatsappOrder(productName, price){
+  var phone = "919999999999"; // apna WhatsApp number
+  var message = `Hi! I want to order ${productName} (${price}). Please process my order.`;
+  var url = "https://wa.me/" + phone + "?text=" + encodeURIComponent(message);
+  window.open(url, "_blank");
+}
+</script>
+
+</body>
+</html>
